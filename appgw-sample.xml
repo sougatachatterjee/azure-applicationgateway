@@ -2,7 +2,7 @@
 <config version="8.0.0" urldb="paloaltonetworks">
   <mgt-config>
     <users>
-      <entry name="admin">
+      <entry name="paadmin">
         <phash>*</phash>
         <permissions>
           <role-based>
@@ -10,7 +10,7 @@
           </role-based>
         </permissions>
       </entry>
-      <entry name="pandemo">
+      <entry name="panrule">
         <permissions>
           <role-based>
             <superuser>yes</superuser>
@@ -303,7 +303,7 @@
                 <static-route>
                   <entry name="appgw">
                     <nexthop>
-                      <ip-address>192.168.1.1</ip-address>
+                      <ip-address>10.255.0.177</ip-address>
                     </nexthop>
                     <bfd>
                       <profile>None</profile>
@@ -481,10 +481,10 @@
           </import>
           <address>
             <entry name="firewall-untrust-IP">
-              <ip-netmask>192.168.1.4</ip-netmask>
+              <ip-netmask>10.255.0.181</ip-netmask>
             </entry>
             <entry name="internal-load-balancer-IP">
-              <ip-netmask>192.168.2.6</ip-netmask>
+              <ip-netmask>10.255.0.104</ip-netmask>
             </entry>
           </address>
         </entry>

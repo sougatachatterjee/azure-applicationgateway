@@ -2,7 +2,7 @@
 <config version="8.0.0" urldb="paloaltonetworks">
   <mgt-config>
     <users>
-      <entry name="paadmin">
+      <entry name="paloadmin">
         <phash>*</phash>
         <permissions>
           <role-based>
@@ -481,7 +481,7 @@
           </import>
           <address>
             <entry name="firewall-untrust-IP">
-              <ip-netmask>10.255.0.181</ip-netmask>
+              <ip-netmask>10.255.0.180</ip-netmask>
             </entry>
             <entry name="internal-load-balancer-IP">
               <ip-netmask>10.255.0.104</ip-netmask>
